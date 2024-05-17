@@ -6,7 +6,7 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "ZHAW Requirements Engineering Friend Tracker (FS2024)",
+            "title": "Noemi's Friend Tracker (FS2024)",
             "formList": [
                 {
                     "id": "FriendForm",
@@ -49,6 +49,13 @@ export class GuiModel {
                             "height": 4,
                             "maxLength": 5000,
                         },
+                        {
+                            "id": "nickname",
+                            "type": "text",
+                            "name": "Nickname",
+                            "width": 2,
+                            "required": true
+                            },
                         {
                             "type": "deleteButton",
                             "name": "Delete"
@@ -138,6 +145,13 @@ export class GuiModel {
                             "color": "yellow",
                             "page": "locationspage",
                         },
+                        {
+                            "type": "button",
+                            "name": "Groups",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "page": "groupspage",
+                            },
                     ]
                 },
                 {
