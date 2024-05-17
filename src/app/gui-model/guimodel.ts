@@ -35,6 +35,12 @@ export class GuiModel {
                             "width": 2,
                             "required": true
                             },
+                            {
+                                "id": "birthdate",
+                                "type": "date",
+                                "name": "Birthday",
+                                "width": 2
+                            },
                         {
                             "id": "group",
                             "type": "autocomplete",
@@ -51,12 +57,7 @@ export class GuiModel {
                             "form": "LocationForm",
                             "width": 2
                         },
-                        {
-                            "id": "birthdate",
-                            "type": "date",
-                            "name": "Birthday",
-                            "width": 2
-                        },
+                        
                         {
                             "id": "comment",
                             "type": "text",
@@ -344,7 +345,7 @@ export class GuiModel {
                         }
             ]
         }
-    };
+        };
 
 
     get guiModel() {
