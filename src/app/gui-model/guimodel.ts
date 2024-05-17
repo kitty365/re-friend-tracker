@@ -13,14 +13,7 @@ export class GuiModel {
                     "title": "Friend",
                     "url": "/friend",
                     "formFieldList": [
-                        {
-                            "id": "group",
-                            "type": "autocomplete",
-                            "name": "Group",
-                            "url": "/group",
-                            "form": "GroupForm",
-                            "width": 2
-                            },
+                       
                         {
                             "id": "familyName",
                             "type": "text",
@@ -35,6 +28,21 @@ export class GuiModel {
                             "width": 1,
                             "required": true
                         },
+                        {
+                            "id": "nickname",
+                            "type": "text",
+                            "name": "Nickname",
+                            "width": 2,
+                            "required": true
+                            },
+                        {
+                            "id": "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "url": "/group",
+                            "form": "GroupForm",
+                            "width": 2
+                            },
                         {
                             "id":   "location",
                             "type": "autocomplete",
@@ -57,13 +65,7 @@ export class GuiModel {
                             "height": 4,
                             "maxLength": 5000,
                         },
-                        {
-                            "id": "nickname",
-                            "type": "text",
-                            "name": "Nickname",
-                            "width": 2,
-                            "required": true
-                            },
+                        
                         {
                             "type": "deleteButton",
                             "name": "Delete"
@@ -135,21 +137,23 @@ export class GuiModel {
                         "title": "Activity",
                         "url": "/activity",
                         "formFieldList": [
+
+                            {
+                                "id": "name",
+                                "type": "text",
+                                "name": "ActivityName",
+                                "width": 2,
+                                "required": true
+                                },
+                            
                         {
-                        "id": "name",
-                        "type": "text",
-                        "name": "ActivityName",
-                        "width": 2,
-                        "required": true
-                        },
-                        {
-                            "id": "location",
+                            "id":   "location",
                             "type": "autocomplete",
                             "name": "Location",
                             "url": "/location",
                             "form": "LocationForm",
                             "width": 2
-                            },
+                        },
                         {
                         "type": "deleteButton",
                         "name": "Delete"
@@ -318,14 +322,14 @@ export class GuiModel {
                         "type": "backbutton",
                         },
                         {
-                        "type": "newButton",
-                        "name": "NewActivity",
-                        "icon": "fa-weixin",
-                        "color": "green",
-                        "form": {
-                        "form": "ActivityForm"
-                        }
-                        },
+                            "type": "newButton",
+                            "name": "NewActivity",
+                            "icon": "fa-weixin",
+                            "color": "green",
+                            "form": {
+                            "form": "ActivityForm"
+                            }
+                            },
                         {
                             "type": "list",
                             "icon": "fa-weixin",
