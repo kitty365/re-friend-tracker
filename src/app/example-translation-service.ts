@@ -29,6 +29,7 @@ export class ExampleTranslationService extends TranslationService {
             "EditActivity" : "Edit Activity",
             "EditFriend" : "Edit Friend",
             "EditLocation" : "Edit Location",
+            "EditGroup" : "Edit Group",
             "Friends" : "Friends",
             "Friend" : "Friend",
             "FamilyName" : "Family Name",
