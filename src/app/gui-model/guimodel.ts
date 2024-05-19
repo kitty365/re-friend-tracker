@@ -255,8 +255,69 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
+                            "page": "friendinsidepage"
+                        },
+                    ]
+                }, 
+                {
+                    "id": "friendinsidepage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "button",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "green",
                             "form": {
                                 "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "AddActivity",
+                            "icon": "fa-regular fa-hippo",
+                            "color": "green",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/friend/:friendKey/activity",
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "locationinsidepage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "button",
+                            "name": "EditLocation",
+                            "icon": "fa-cube",
+                            "color": "yellow",
+                            "form": {
+                                "form": "LocationForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-regular fa-hippo",
+                            "color": "green",
+                            "search": true,
+                            "url": "/location/:locationKey/activity",
+                            "form": {
+                                "form": "ActivityForm"
                             }
                         },
                     ]
@@ -283,9 +344,7 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/location",
-                            "form": {
-                                "form": "LocationForm"
-                            }
+                            "page": "locationinsidepage"
                         },
                     ]
                 },
@@ -317,6 +376,33 @@ export class GuiModel {
                     ]
                     },
                     {
+                        "id": "activityinsidepage",
+                        "elementList": [
+                            {
+                                "type": "backbutton",
+                            },
+                            {
+                                "type": "button",
+                                "name": "EditActivity",
+                                "icon": "fa-regular fa-hippo",
+                                "color": "green",
+                                "form": {
+                                    "form": "ActivityForm"
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "icon": "fa-user",
+                                "color": "blue",
+                                "search": true,
+                                "url": "/activity/:activityKey/friend",
+                                "form": {
+                                    "form": "FriendForm"
+                                }
+                            },
+                        ]
+                    },
+                    {
                         "id": "activitiespage",
                         "elementList": [
                         {
@@ -337,11 +423,10 @@ export class GuiModel {
                             "color": "green",
                             "search": true,
                             "url": "/activity",
-                            "form": {
-                            "form": "ActivityForm"
-                            }
+                            "page": "activityinsidepage"
                             },
                         ]
+
                         }
             ]
         }
