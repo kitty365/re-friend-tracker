@@ -36,6 +36,7 @@ export class ExampleTranslationService extends TranslationService {
             "Group" : "Group",
             "Groups" : "Groups",
             "GroupName" : "Group Name",
+            "ActivityName": "Activity Name",
             "Location" : "Location",
             "LocationName" : "Location Name",
             "Name" : "Name",
